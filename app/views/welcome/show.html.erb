@@ -1,0 +1,15 @@
+<div class="center jumbotron">
+
+<% (1..100).each do |i| %>
+  <% if i % 35 == 0 %>
+    <th> Nama Team, </th>
+  <% elsif i % 7 == 0 %>
+    <th> Team, </th>
+  <% elsif i % 5 == 0 %>
+    <th> Nama, </th>
+  <% else %>
+    <th><%= i %>,</th>
+  <% end %>
+<% end %>
+
+</div>

@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ $white_opaque: rgba(250, 250, 250, .3);
+ $dark: #1F7972;
+
+* {
+	box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: 80px;
+  height: 100%;
+  background: -webkit-linear-gradient(40deg, #4CB8C4 40%, #7f61c8 100%);
+  background:    -moz-linear-gradient(40deg, #4CB8C4 40%, #7f61c8 100%);
+  background:     -ms-linear-gradient(40deg, #4CB8C4 40%, #7f61c8 100%);
+  background:      -o-linear-gradient(40deg, #4CB8C4 40%, #7f61c8 100%);
+  background:         linear-gradient(40deg, #4CB8C4 40%, #7f61c8 100%);
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	background: white;
+	outline: none;
+	border: none;
+	height: 40px;
+	border-radius: 4px;
+	width: 25%;
+	display: inline-block;
+	transition: all .4s ease-in-out;
+	cursor: pointer;
+	color: $dark;
+	&:hover {
+		background: $dark;
+		color: white;
+	}
+}
+::-webkit-input-placeholder { color: $dark; }
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+h3 {
+  position:absolute;
+  font-size: 1em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+  width:80%;
+
+}
+
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
